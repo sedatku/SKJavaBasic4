@@ -27,16 +27,27 @@ public class Task1 {
 
 	int average() {
 		return (grade1 + grade2 + grade3) / 3;
+			}
+	
+	     void printInfo(){
+
+		System.out.println(name + " has an average " + average());
+		
 	}
 
 	public static void main(String[] args) {
 		Task1 st1 = new Task1("Sedat", 95, 98, 97);
 		Task1 st2 = new Task1("Dardan", 95, 96, 94);
 		Task1 st3 = new Task1("Hakan", 65, 85, 95);
+		
+		st1.printInfo();
+		st2.printInfo();
+		st3.printInfo();
 
-		System.out.println(st1.name + " has an average of " + st1.average());
-		System.out.println(st2.name + " has an average of " + st2.average());
-		System.out.println(st3.name + " has an average of " + st3.average());
+//		System.out.println(st1.name + " has an average of " + st1.average());
+//		
+//		System.out.println(st2.name + " has an average of " + st2.average());
+//		System.out.println(st3.name + " has an average of " + st3.average());
 	
 	//can I create this object
 		Task1 st4 = new Task1(); //does not work if you have defined a parameterized
