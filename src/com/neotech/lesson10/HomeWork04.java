@@ -15,13 +15,13 @@ public class HomeWork04 {
 		// ask a max of then times, if you get a yes before get it, break the loop
 
 		Scanner scan = new Scanner(System.in);
-		String input = "";
+	//	String input = "";
 
 		// ask user ten times
 
 		for (int i = 0; i < 10; i++) {
 			System.out.println("Do you want to apply for a credit card?");
-			input = scan.next();
+			String input = scan.next();
 			if (input.equalsIgnoreCase("yes")) {
 				System.out.println("Perfect, good choice");
 				break;
